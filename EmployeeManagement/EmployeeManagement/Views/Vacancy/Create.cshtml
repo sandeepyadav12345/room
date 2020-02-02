@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "CreateVacancy";
+
+    @model EmployeeManagement.Models.Vacancy
+
+    
+}
+
+
+   
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Department</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <form asp-controller="Vacancy" asp-action="Create" enctype="multipart/form-data" method="post">
+                            <div class="form-group">
+                                <label for="Description">Description</label>
+                                <textarea class="form-control" id="Description" name="Description" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="Date">Date</label>
+                                <input type="text" class="form-control" id="Date" name="Date" placeholder="Enter vacancy date">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Time">Time</label>
+                                <input type="text" class="form-control" id="Time" name="Time" placeholder="Enter vacancy time">
+
+                            </div>
+                           
+
+
+                            
+                            
+                            
+                            <div class="card-action">
+                                <button class="btn btn-success" type="submit">Submit</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

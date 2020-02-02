@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\bin\Debug\SwitchCalc.exe.config
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\bin\Debug\SwitchCalc.exe
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\bin\Debug\SwitchCalc.pdb
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\obj\Debug\SwitchCalc.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\obj\Debug\SwitchCalc.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\obj\Debug\SwitchCalc.exe
+C:\Users\Dell\source\repos\SwitchCalc\SwitchCalc\obj\Debug\SwitchCalc.pdb

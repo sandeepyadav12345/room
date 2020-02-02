@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "LeaveDetails";
+
+    @model EmployeeManagement.Models.Leave
+
+
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex align-items-center">
+                <h4 class="card-title">Leave Details</h4>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="col-md-4">
+                <div class="card card-post card-round">
+                    
+                    <div class="card-body">
+                        <div class="d-flex">
+                            
+                            <div class="info-post ml-2">
+                                <p class="username">Leave Type:@Model.Type</p>
+                                
+                            </div>
+                        </div>
+                        <div class="separator-solid"></div>
+                        <p class="card-category text-info mb-1"><a href="#">Design</a></p>
+                        <h3 class="card-title">
+                            From: @Model.FromDate
+                        </h3>
+                        <h3 class="card-title">
+                            To: @Model.ToDate
+                        </h3>
+                        
+
+
+
+                    </div>
+                    <a asp-controller="Leave" asp-action="AllDetails" class="btn btn-primary" data-original-title="Back"><i class="fas fa-arrow-circle-left"></i></a>
+                </div>
+            </div>
+            <!-- Modal -->
+
+
+
+
+
+        </div>
+    </div>

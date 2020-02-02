@@ -1,0 +1,10 @@
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.exe.config
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.exe
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.pdb
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.Form1.resources
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.Properties.Resources.resources
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.exe
+C:\Users\Dell\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.pdb

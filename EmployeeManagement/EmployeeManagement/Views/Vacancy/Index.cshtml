@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "Admin";
+
+    @model IEnumerable<EmployeeManagement.Models.Department>
+
+}
+
+@foreach(var d in Model)
+{
+    <ul>
+        <li>@d.DepartmentId</li>
+        <li>@d.DepName</li>
+        <li>@d.DepLocation</li>
+        
+    </ul>
+    
+
+    
+}
+<p>"employees"</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

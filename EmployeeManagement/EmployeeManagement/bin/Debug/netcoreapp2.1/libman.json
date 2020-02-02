@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twitter-bootstrap@4.3.1",
+      "destination": "wwwroot/lib/twitter-bootstrap/"
+    },
+    {
+      "library": "webfont@1.6.28",
+      "destination": "wwwroot/js/",
+      "files": [
+        "webfontloader.js"
+      ]
+    }
+  ]
+}

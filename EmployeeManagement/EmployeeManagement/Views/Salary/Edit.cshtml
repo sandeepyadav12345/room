@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "EditSalary";
+
+    @model EmployeeManagement.Models.Salary
+
+    
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Form Elements</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <form asp-controller="Salary" asp-action="Edit" enctype="multipart/form-data" method="post">
+                            <input hidden asp-for="SalaryId" />
+                            
+                            <div class="form-group">
+                                <label for="Name">Salary Amount</label>
+                                <input type="text" asp-for="Amount" class="form-control" id="Amount" name="Amount" placeholder="@Model.Amount">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="DepHod">Department</label>
+                                <input type="text" asp-for="Department" class="form-control" id="Department" name="Department" placeholder="@Model.Department">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="DepLocation">Salary Type</label>
+                                <input type="text" asp-for="Type" class="form-control" id="Type" name="Type" placeholder="@Model.Type">
+
+                            </div>
+                            
+
+
+
+                            
+                           
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary" asp-route-id="@Model.SalaryId">Update</button>
+                                    <a asp-controller="Salary" asp-action="AllDetails" class="btn btn-primary">Cancel</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

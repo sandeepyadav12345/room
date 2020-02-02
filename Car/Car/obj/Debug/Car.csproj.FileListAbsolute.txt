@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\Car\Car\obj\Debug\Car.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Car\Car\obj\Debug\Car.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Car\Car\bin\Debug\Car.exe.config
+C:\Users\Dell\source\repos\Car\Car\bin\Debug\Car.exe
+C:\Users\Dell\source\repos\Car\Car\bin\Debug\Car.pdb
+C:\Users\Dell\source\repos\Car\Car\obj\Debug\Car.exe
+C:\Users\Dell\source\repos\Car\Car\obj\Debug\Car.pdb

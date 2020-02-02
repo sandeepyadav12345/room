@@ -1,0 +1,119 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "Dashboard";
+}
+    <table class="table">
+      
+        <tbody>
+            <tr>
+                
+                <td>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/img/employee.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee</h5>
+                                <p class="card-text">a person employed for wages or salary, especially at non-executive level.</p>
+                                <a asp-controller="Employee" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Employee"><i class="fas fa-people-carry"></i></a>
+                            </div>
+                        </div>
+                    
+                </td>
+                <td>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/img/department.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Department</h5>
+                                <p class="card-text">a division of a large organization such as a government, university, or business, dealing with a specific area of activity.</p>
+                                <a asp-controller="Department" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Department"><i class="fas fa-building"></i></a>
+                            </div>
+                        </div>
+                    
+                </td>
+                <td>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/img/salary.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Salary</h5>
+                                <p class="card-text">A salary is a form of payment from an employer to an employee, which may be specified in an employment contract.</p>
+                                <a asp-controller="Salary" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Salary"><i class="fas fa-rupee-sign"></i></a>
+                            </div>
+                        </div>
+                    
+                </td>
+            </tr>
+            <tr>
+               
+                <td>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/img/vacancy.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vacancy</h5>
+                                <p class="card-text">an unoccupied position or job.</p>
+                                <a asp-controller="Vacancy" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Vacancy"><i class="fas fa-newspaper"></i></a>
+                            </div>
+                        </div>
+                    
+                </td>
+                <td>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/img/designation.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Designation</h5>
+                                <p class="card-text">the action of choosing someone to hold an office or post</p>
+                                <a asp-controller="Designation" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Designation"><i class="fas fa-calendar-check"></i></a>
+                            </div>
+                        </div>
+                    
+                </td>
+                <td>
+    <div class="card" style="width: 18rem;">
+        <img src="~/img/leave.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Leave</h5>
+            <p class="card-text">Leave is defined as permission, or is time off from work.</p>
+            <a asp-controller="Leave" asp-action="AllDetails" class="btn btn-primary stretched-link" data-original-title="Leave"><i class="far fa-house-leave"></i></a>
+        </div>
+    </div>
+</td>
+            </tr>
+           
+        </tbody>
+    </table>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

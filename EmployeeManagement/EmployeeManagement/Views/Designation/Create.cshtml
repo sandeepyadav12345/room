@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "CreateDesignation";
+
+    @model EmployeeManagement.Models.Designation
+
+    
+}
+
+
+   
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Designation</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <form asp-controller="Designation" asp-action="Create" enctype="multipart/form-data" method="post">
+                            <div class="form-group">
+                                <label for="Date">Department Date</label>
+                                <input type="text" class="form-control" id="Date" name="Date" placeholder="Enter Designation Date">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Time">Designation Time</label>
+                                <input type="text" class="form-control" id="Time" name="Time" placeholder="Enter Designation Time">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Day">Designation Day</label>
+                                <input type="text" class="form-control" id="Day" name="Day" placeholder="Enter Designation Day">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="ClientName">Client Name</label>
+                                <input type="text" class="form-control" id="ClientName" name="ClientName" placeholder="Enter Client Name">
+
+                            </div>
+
+
+
+
+
+
+                            <div class="card-action">
+                                <button class="btn btn-success" type="submit">Submit</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\bin\Debug\ArrayUser.exe.config
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\bin\Debug\ArrayUser.exe
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\bin\Debug\ArrayUser.pdb
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\obj\Debug\ArrayUser.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\obj\Debug\ArrayUser.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\obj\Debug\ArrayUser.exe
+C:\Users\Dell\source\repos\ArrayUser\ArrayUser\obj\Debug\ArrayUser.pdb

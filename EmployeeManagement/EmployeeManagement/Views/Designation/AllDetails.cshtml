@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "AllDetailsDesignation";
+
+    @model IEnumerable<EmployeeManagement.Models.Designation>
+}
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex align-items-center">
+                <h4 class="card-title">Designation</h4>
+
+                <a class="btn btn-primary btn-round ml-auto" asp-controller="Designation" asp-action="Create">
+                    <i class="fa fa-plus"></i>
+                    Add new Designation
+                </a>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- Modal -->
+
+
+
+
+            <div class="table-responsive">
+                <table id="add-row" class="display table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>DesignationId</th>
+                            <th>DepartmentDate</th>
+                            <th>DepartmentTime</th>
+                            <th>DepartmentDay</th>
+                            <th>ClientName</th>
+
+                            <th style="width: 10%">Action</th>
+                        </tr>
+                    </thead>
+                    @foreach (var emp in Model)
+                    {
+
+                        <tbody>
+
+                            <tr>
+                                <td>@emp.DesignationId</td>
+                                <td>@emp.Date</td>
+                                <td>@emp.Time</td>
+                                <td>@emp.Day</td>
+                                <td>@emp.ClientName</td>
+
+
+                                <td>
+                                    <div class="form-button-action">
+                                        <a asp-controller="Designation" asp-action="Edit" asp-route-id="@emp.DesignationId" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                                        <a asp-controller="Designation" asp-action="Delete" asp-route-id="@emp.DesignationId" class="btn btn-primary" data-original-title="Delete"><i class="fa fa-times"></i></a>
+                                        <a asp-controller="Designation" asp-action="Details" asp-route-id="@emp.DesignationId" class="btn btn-primary" data-original-title="Details"><i class="fas fa-info-circle"></i></a>
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

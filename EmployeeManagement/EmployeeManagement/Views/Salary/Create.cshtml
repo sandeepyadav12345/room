@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "CreateSalary";
+
+    @model EmployeeManagement.Models.Salary
+
+    
+}
+
+
+   
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Salary</div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <form asp-controller="Salary" asp-action="Create" enctype="multipart/form-data" method="post">
+                            <div class="form-group">
+                                <label for="Name">Salary Amount</label>
+                                <input type="text" class="form-control" id="Amount" name="Amount" placeholder="Enter Salary Amount">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="DepHod">Department</label>
+                                <input type="text" class="form-control" id="Department" name="Department" placeholder="Enter Department ">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="DepLocation">Salary Type</label>
+                                <input type="text" class="form-control" id="Type" name="Type" placeholder="Enter Salary Type">
+
+                            </div>
+                           
+
+
+                            
+                            
+                            
+                            <div class="card-action">
+                                <button class="btn btn-success" type="submit">Submit</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

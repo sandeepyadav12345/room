@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "AllDetailsDepartment";
+
+    @model IEnumerable<EmployeeManagement.Models.Department>
+}
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex align-items-center">
+                <h4 class="card-title">Department</h4>
+
+                <a class="btn btn-primary btn-round ml-auto" asp-controller="Department" asp-action="Create">
+                    <i class="fa fa-plus"></i>
+                    Add new Department
+                </a>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- Modal -->
+
+
+
+
+            <div class="table-responsive">
+                <table id="add-row" class="display table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>DepartmentId</th>
+                            <th>DepartmentName</th>
+                            <th>DepartmentHod</th>
+                            <th>DepartmentLocation</th>
+                            
+                            <th style="width: 10%">Action</th>
+                        </tr>
+                    </thead>
+                    @foreach (var emp in Model)
+                    {
+
+                        <tbody>
+
+                            <tr>
+                                <td>@emp.DepartmentId</td>
+                                <td>@emp.DepName</td>
+                                <td>@emp.DepHod</td>
+                                <td>@emp.DepLocation</td>
+                               
+
+                                <td>
+                                    <div class="form-button-action">
+                                        <a asp-controller="Department" asp-action="Edit" asp-route-id="@emp.DepartmentId" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-edit"></i></a> <br />
+                                        <a asp-controller="Department" asp-action="Delete" asp-route-id="@emp.DepartmentId" class="btn btn-primary" data-original-title="Delete"><i class="fa fa-times"></i></a> <br />
+                                        <a asp-controller="Department" asp-action="Details" asp-route-id="@emp.DepartmentId" class="btn btn-primary" data-original-title="Details"><i class="fas fa-info-circle"></i></a>
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

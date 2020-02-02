@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Himalayan", "Himalayan\Himalayan.csproj", "{ED6D00C9-D99E-429C-84A3-8AA0FCA02F37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED6D00C9-D99E-429C-84A3-8AA0FCA02F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6D00C9-D99E-429C-84A3-8AA0FCA02F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6D00C9-D99E-429C-84A3-8AA0FCA02F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6D00C9-D99E-429C-84A3-8AA0FCA02F37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DE95828-EB5E-4DBC-B41D-30388CA06B5C}
+	EndGlobalSection
+EndGlobal

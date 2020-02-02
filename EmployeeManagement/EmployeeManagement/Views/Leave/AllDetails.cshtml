@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewBag.Title = "AllDetailsDepartment";
+
+    @model IEnumerable<EmployeeManagement.Models.Leave>
+}
+
+     
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex align-items-center">
+                <h4 class="card-title">Leave</h4>
+
+                <a class="btn btn-primary btn-round ml-auto" asp-controller="Leave" asp-action="Create">
+                    <i class="fa fa-plus"></i>
+                    Add new Leave
+                </a>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- Modal -->
+
+
+
+
+            <div class="table-responsive">
+                <table id="add-row" class="display table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>LeaveId</th>
+                            <th>LeaveType</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Employee Name</th>
+
+                            <th style="width: 10%">Action</th>
+                        </tr>
+                    </thead>
+                    @foreach (var emp in Model)
+                    {
+
+                        <tbody>
+
+                            <tr>
+                                <td>@emp.LeaveId</td>
+                                <td>@emp.Type</td>
+                                <td>@emp.FromDate</td>
+                                <td>@emp.ToDate</td>
+                                <td>@emp.EmployeeName</td>
+
+
+                                <td>
+                                    <div class="form-button-action">
+                                        <a asp-controller="Leave" asp-action="Edit" asp-route-id="@emp.LeaveId" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                                        <a asp-controller="Leave" asp-action="Delete" asp-route-id="@emp.LeaveId" class="btn btn-primary" data-original-title="Delete"><i class="fa fa-times"></i></a>
+                                        <a asp-controller="Leave" asp-action="Details" asp-route-id="@emp.LeaveId" class="btn btn-primary" data-original-title="Details"><i class="fas fa-info-circle"></i></a>
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

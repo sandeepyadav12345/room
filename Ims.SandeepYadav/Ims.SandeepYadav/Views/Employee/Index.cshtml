@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{ 
+    Layout = "~Views/Shared/_Layout.cshtml";
+}
+
+@{
+
+ @model IEnumerable<Ims.SandeepYadav.Models.Employee>
+    <table>
+
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+
+        @foreach (var item in Model)
+
+        {
+
+
+            <tr>
+                <td>@item.EmployeeId</td>
+
+                <td>@item.EmployeeName</td>
+
+                <td>@item.EmployeeEmail</td>
+            </tr>
+
+        }
+
+
+
+
+    </table>
+    
+
+}
